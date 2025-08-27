@@ -58,6 +58,7 @@ class Alien():
         self.HP=1
 ##this is basically speed
         self.direction = 1
+        self.step = 1
     def move(self):
         self.x += self.step*self.direction
         for a in Alien.AlienObj:
