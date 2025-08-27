@@ -64,12 +64,12 @@ class Alien():
         for a in Alien.AlienObj:
             if a.x > 750:
                 self.direction = -1
-                self.update(1)
+                self.updatedown(1)
             elif a.x <0:
                 self.direction = 1
-                self.update(1)
+                self.updatedown(1)
         
-    def update(self, down):
+    def updatedown(self, down):
         for a in Alien.AlienObj:
             a.y += down
         
